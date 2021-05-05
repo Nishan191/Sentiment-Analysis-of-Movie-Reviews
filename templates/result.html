@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
     <title> Moview Review - Sentiment Analyser</title>
-    <link rel="shortcut icon" href="{{ url_for('static', filename='Sirubico-Movie-Genre-Action-3.ico') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Sirubico-Movie-Genre-Action.ico') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
 		<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
 		<link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
@@ -27,7 +27,7 @@
 				<img class="gif" src="{{ url_for('static', filename='positive-review.jpg') }}" alt="Positive Review">
 			{% elif prediction==0 %}
 				<h1>Prediction: <span class='danger'>Oops! This is a NEGATIVE Review.</span></h1>
-				<img class="gif" src="{{ url_for('static', filename='negative-review.jpg') }}" alt="Negative Review">
+				<img class="gif" src="{{ url_for('static', filename='negative-reviews.jpg') }}" alt="Negative Review">
 			{% endif %}
 		</div>
 
