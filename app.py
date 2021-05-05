@@ -2,7 +2,7 @@
 from flask import Flask, render_template, request
 import pickle
 
-# Load the Multinomial Naive Bayes model and CountVectorizer object from disk
+# Load the Logistic Regression model and CountVectorizer object from disk
 filename = 'Logistic-Regression-Tuned-Model.pkl'
 classifier = pickle.load(open(filename, 'rb'))
 cv = pickle.load(open('CV_Transform.pkl','rb'))
