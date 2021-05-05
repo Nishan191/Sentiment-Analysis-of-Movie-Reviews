@@ -24,17 +24,17 @@
 		<div class="results">
 			{% if prediction==1 %}
 				<h1>Prediction: <span class='safe'>Great! This is a POSITIVE Review.</span></h1>
-				<img class="gif" src="{{ url_for('static', filename='positive-review.webp') }}" alt="Positive Review">
+				<img class="gif" src="{{ url_for('static', filename='positive-review.jpg') }}" alt="Positive Review">
 			{% elif prediction==0 %}
 				<h1>Prediction: <span class='danger'>Oops! This is a NEGATIVE Review.</span></h1>
-				<img class="gif" src="{{ url_for('static', filename='negative-review.webp') }}" alt="Negative Review">
+				<img class="gif" src="{{ url_for('static', filename='negative-review.jpg') }}" alt="Negative Review">
 			{% endif %}
 		</div>
 
 		<!-- Footer -->
 		<div class='footer'>
             <div class="contact">
-                <a target="_blank" href="https://github.com/Nishan191/Tesla_Stock_Prediction"><i class="fab fa-github fa-lg contact-icon"></i></a>
+                <a target="_blank" href="https://github.com/Nishan191/Sentiment-Analysis-of-Movie-Reviews"><i class="fab fa-github fa-lg contact-icon"></i></a>
                 <a target="_blank" href="https://www.linkedin.com/in/nishan-karki-b8b444179/"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
             </div>
             <p class='footer-description'>Created by Nishan Karki</p>
