@@ -3,9 +3,9 @@ from flask import Flask, render_template, request
 import pickle
 
 # Load the Multinomial Naive Bayes model and CountVectorizer object from disk
-filename = 'Logistic_Regression-model.pkl'
+filename = 'Logistic-Regression-Tuned-Model.pkl'
 classifier = pickle.load(open(filename, 'rb'))
-cv = pickle.load(open('cv1_transform.pkl','rb'))
+cv = pickle.load(open('CV_Transform.pkl','rb'))
 
 app = Flask(__name__)
 @app.route('/')
